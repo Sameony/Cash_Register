@@ -1,7 +1,7 @@
 const bill_amount = document.querySelector("#bill-amount");
 const cash_amount = document.querySelector("#cash-amount");
 const btn_check  = document.querySelector(".btn-check");
-const error_message = document.querySelector("#error-message");
+const error_message = document.querySelector(".error-message");
 
 error_message.style.display="none";
 
