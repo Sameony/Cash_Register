@@ -33,7 +33,7 @@ function errorHandler(Message)
 
 
 btn_check.addEventListener("click" ,function clickEventHandler(){
-    if(parseInt(bill_amount.value) < 0){
+    if(parseInt(bill_amount.value)  < 0){
         errorHandler("Invalid bill amount");
     }
     else 
