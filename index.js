@@ -12,7 +12,7 @@ const ourNotes = [1,5,10,20,50,100,500,2000];
 
 function calculateChange(change)
 {
-    for(var i=ourNotes.length-1;i>=0;i++)
+    for(var i=ourNotes.length-1;i>=0;i--)
     {
         var curr_num = Math.trunc(change/ourNotes[i]);
         change %= ourNotes[i];
@@ -33,12 +33,12 @@ function errorHandler(Message)
 
 
 btn_check.addEventListener("click" ,function clickEventHandler(){
-    if(bill_amount.value < 0){
+    if(parseInt(bill_amount.value) < 0){
         errorHandler("Invalid bill amount");
     }
     else 
     {
-        if(cash_amount.value > bill_amount.value)
+        if(parseInt(cash_amount.value) >= parseInt(bill_amount.value))
         {
             const change_amount = cash_amount.value - bill_amount.value;
             calculateChange(change_amount);
