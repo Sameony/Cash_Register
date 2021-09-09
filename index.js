@@ -12,9 +12,11 @@ function clickEventHandler(){
     }
     else if(cash_amount.value <= bill_amount)
     {
-        errorHandler("Invalid cash amount");
+        errorHandler("The cash provided should at least be equal to the bill amount");
     }
     else{
+        const change_amount = cash_amount.value - bill_amount.value;
+        calculateChange(change_amount);
 
     }
 
