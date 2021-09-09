@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50vw;
+}
+
+.table-note{
+    border: 1px solid black;
+    padding: 1rem;
+}
+tr,th,td{
+    border:1px solid black;
+}
+
