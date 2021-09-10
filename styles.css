@@ -34,10 +34,12 @@ body{
 .inpbutton{
     padding: 0.6rem;
     font-size: large;
+    margin-left: 2rem;
 }
 .table-note{
     border: 1px solid white;
     padding: 1rem;
+    width: 50vw;
 }
 tr,th,td{
     border:1px solid white;
@@ -45,11 +47,11 @@ tr,th,td{
     
 }
 .no-of-notes{
-    min-width: 3rem;
+    width: 3rem;
 }
 
-.checkBill{
-    width:8vw;
+.checkBill, .btn-check{
+    
     margin: auto;
 }
 
