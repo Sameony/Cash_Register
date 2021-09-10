@@ -31,14 +31,21 @@ function errorHandler(Message)
 {
     error_message.style.display="block";
     error_message.innerText = Message;
+    hideMe.style.display="none";
+    cash_amount.value=0;
 }
 
 bonus_butt.addEventListener("click", function checkBill()
 {
-    if(parseInt(bill_amount.value)<0)
+    if(isNaN(bill_amount.value)||isNaN(cash_amount.value))
+    {
+        errorHandler("We cannot do calculations on Alphabets!!");
+        
+    }
+    else if(parseInt(bill_amount.value)<0)
     {
         errorHandler("Bill amount cannot be negative.");
-        hideMe.style.display="none";
+        
     }
     else
     {
@@ -47,8 +54,15 @@ bonus_butt.addEventListener("click", function checkBill()
     }
 })
 btn_check.addEventListener("click" ,function clickEventHandler(){
-    if(parseInt(bill_amount.value)  < 0){
+    if(isNaN(bill_amount.value)||isNaN(cash_amount.value))
+    {
+        errorHandler("We cannot do calculations on Alphabets!!");
+        
+    }
+    
+    else if(parseInt(bill_amount.value)  < 0){
         errorHandler("Invalid bill amount");
+        hideMe.style.display="none";
     }
     else 
     {
