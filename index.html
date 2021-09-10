@@ -10,34 +10,40 @@
 <body>
     <section class="container">
         <h1 class="heading"> Cash Register</h1>
-        <p class="description">
+        <p class="description pads">
         Enter the bill amount And the cash amount
         given by customer, And we'll let you know the minimum number of
         notes to return. </p>
 
         <label for="bill-amount">Bill to be paid:</label>
-        <input id="bill-amount" type='text' />
-        <button class="checkBill">Check</button>
+        <div class="rowFlex">
+            <input id="bill-amount" class="pads largify" type='text' />
+            <button class="checkBill inpbutton">Check</button>
+        </div>
         <br />
         <p id="error-message"></p>
         <div id="bonus">
 
-        <label for="cash-amount">Cash Received:</label>
-        <input id="cash-amount" type='text' />
-        <br />
-        <button class="btn-check">Check</button>
+            <div class="rowFlex">
+                <label for="cash-amount">Cash Received:</label>
+                <br />
+                <input id="cash-amount" class="pads largify" type='text' />
+                <br />
+                <button class="btn-check inpbutton">Check</button>
+            </div>
+        
         <table class="table-note">
             <h3>Return change</h3>
         <tr>
             <th>No. of notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
+            <td class="no-of-notes pads"></td>
         </tr>
         <tr>
             <th>Note:</th>

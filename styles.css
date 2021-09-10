@@ -1,15 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Quantico:ital@1&display=swap');
+
+body{
+    margin:0px;
+    background-color: greenyellow;
+    
+}
+
+
+.heading{
+    font-size: 4rem;
+    font-family: 'Black Ops One', cursive;
+}
 .container{
+    font-family: 'Quantico', sans-serif;
+    font-size: large;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     width: 50vw;
+    margin: auto;
+    
 }
 
+#bill-amount, #cash-amount{
+    width: 8vw;
+    display: inline-block;
+}
+
+.rowFlex{
+    display: flex;
+    flex-direction: row;
+}
+.inpbutton{
+    padding: 0.6rem;
+    font-size: large;
+}
 .table-note{
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 1rem;
 }
 tr,th,td{
-    border:1px solid black;
+    border:1px solid white;
+    background-color: aliceblue;
+    
+}
+.no-of-notes{
+    min-width: 3rem;
 }
 
+.checkBill{
+    width:8vw;
+    margin: auto;
+}
+
+.margins{
+    margin:2rem;
+}
+
+.pads{
+    padding: 1rem;
+}
+
+.largify{
+    font-size: larger;
+}
