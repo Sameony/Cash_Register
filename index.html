@@ -10,7 +10,7 @@
 <body>
     <section class="container">
         <h1 class="heading"> Cash Register</h1>
-        <p class="description pads">
+        <p class="description pads largify">
         Enter the bill amount And the cash amount
         given by customer, And we'll let you know the minimum number of
         notes to return. </p>
@@ -18,7 +18,7 @@
         <label for="bill-amount">Bill to be paid:</label>
         <div class="rowFlex">
             <input id="bill-amount" class="pads largify" type='text' />
-            <button class="checkBill inpbutton">Check</button>
+            <button class="checkBill inpbutton">Validate Bill</button>
         </div>
         <br />
         <p id="error-message"></p>
@@ -27,7 +27,7 @@
             <div class="rowFlex">
                 
                 <input id="cash-amount" class="pads largify" type='text' />
-                <button class="btn-check inpbutton">Check</button>
+                <button class="btn-check inpbutton">Calculate Notes</button>
             </div>
         
         <table class="table-note">

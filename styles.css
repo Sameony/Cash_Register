@@ -2,14 +2,17 @@
 
 body{
     margin:0px;
-    background-color: greenyellow;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 255, 64));
     
 }
 
-
+button{
+    font-family: 'Black Ops One', cursive;
+}
 .heading{
     font-size: 4rem;
     font-family: 'Black Ops One', cursive;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 3px -1px 0 rgb(255, 255, 255), -1px 3px 0 rgb(255, 255, 255), 3px 3px 0 rgb(255, 255, 255);
 }
 .container{
     font-family: 'Quantico', sans-serif;
@@ -37,7 +40,7 @@ body{
     margin-left: 2rem;
 }
 .table-note{
-    border: 1px solid white;
+    border: 3px solid rgb(253, 253, 253);
     padding: 1rem;
     width: 50vw;
 }
