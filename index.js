@@ -2,8 +2,10 @@ const bill_amount = document.querySelector("#bill-amount");
 const cash_amount = document.querySelector("#cash-amount");
 const btn_check  = document.querySelector(".btn-check");
 const error_message = document.querySelector("#error-message");
-
+const hideMe = document.querySelector("#bonus");
+const bonus_butt = document.querySelector(".checkBill");
 error_message.style.display="none";
+hideMe.style.display="none";
 
 //Register
 const no_of_notes = document.querySelectorAll(".no-of-notes");
@@ -31,13 +33,26 @@ function errorHandler(Message)
     error_message.innerText = Message;
 }
 
-
+bonus_butt.addEventListener("click", function checkBill()
+{
+    if(parseInt(bill_amount.value)<0)
+    {
+        errorHandler("Bill amount cannot be negative.");
+        hideMe.style.display="none";
+    }
+    else
+    {
+        error_message.style.display="none";
+        hideMe.style.display="block";
+    }
+})
 btn_check.addEventListener("click" ,function clickEventHandler(){
     if(parseInt(bill_amount.value)  < 0){
         errorHandler("Invalid bill amount");
     }
     else 
     {
+        
         if(parseInt(cash_amount.value) >= parseInt(bill_amount.value))
         {
             const change_amount = cash_amount.value - bill_amount.value;
