@@ -6,6 +6,7 @@ const hideMe = document.querySelector("#bonus");
 const bonus_butt = document.querySelector(".checkBill");
 error_message.style.display="none";
 hideMe.style.display="none";
+const change=document.querySelector("#change");
 
 //Register
 const no_of_notes = document.querySelectorAll(".no-of-notes");
@@ -70,6 +71,7 @@ btn_check.addEventListener("click" ,function clickEventHandler(){
         if(parseInt(cash_amount.value) >= parseInt(bill_amount.value))
         {
             const change_amount = cash_amount.value - bill_amount.value;
+            change.innerText="Return change: "+change_amount;
             calculateChange(change_amount);
             
         }
